@@ -20,7 +20,7 @@
   <div class="wrap tint-layout">
     <div>
       <h2>WINDOW TINTING</h2>
-      <p class="intro">Mobile and drop-off appointments are available. Share your vehicle details and tint preferences for a quote.</p>
+      <p class="intro">Mobile tinting adds a <strong>$175 mobile service fee</strong>. There’s <strong>no additional fee for drop-off</strong>. Share your vehicle details and tint preferences for a quote.</p>
     </div>
     <form class="tint-form" name="tint-quote" method="POST" action="/tint-thanks.html" data-netlify="true" netlify-honeypot="company-website">
       <input type="hidden" name="form-name" value="tint-quote">
@@ -37,7 +37,7 @@
           <option value="">Select tint type</option><option>Carbon</option><option>Ceramic</option><option>Help me choose</option>
         </select></label>
         <label>Service preference<select name="service-preference" required>
-          <option value="">Select service preference</option><option>Mobile</option><option>Drop-off</option><option>Either</option>
+          <option value="">Select service preference</option><option value="Mobile">Mobile (+$175)</option><option value="Drop-off">Drop-off (no additional fee)</option><option>Either</option>
         </select></label>
         <label class="tint-full">Which windows would you like tinted?
           <select name="windows" required>
