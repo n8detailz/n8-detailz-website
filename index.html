@@ -104,12 +104,31 @@ header .logo img{width:154px;max-height:62px}
 .contact-grid .actions{margin-top:16px}
 @media(max-width:850px){header .logo img{width:135px;max-height:54px}.results-track{grid-auto-columns:calc((100% - 14px)/2)}}
 @media(max-width:650px){.contact-grid{grid-template-columns:1fr}.results-track{grid-auto-columns:82%}}
+
+header .logo{position:relative;display:block;width:132px;height:58px;overflow:hidden;flex:0 0 auto}
+header .logo img{position:absolute;inset:50% auto auto 0;transform:translateY(-50%);width:100%;height:auto;max-height:none;mix-blend-mode:screen}
+.service .package-fit{flex:0;margin:9px 0 0}
+.package-includes{color:#ccc;font-size:14px;line-height:1.55;padding-left:18px;margin:8px 0 0}
+.grid:not(.clay-services) .package-includes{flex:1}
+.service-result{display:grid;grid-template-columns:180px 1fr;align-items:center;gap:clamp(16px,4vw,40px);margin-top:26px;padding:18px;border:1px solid #39393c;border-radius:7px;background:var(--panel);scroll-margin-top:100px}
+.service-result figure{margin:0}
+.service-result video{display:block;width:100%;height:220px;object-fit:contain;background:#080809;border-radius:5px}
+.service-result h3{margin:0;font-size:24px}
+.service-result p{line-height:1.55;color:#ccc}
+.expand-form>summary{cursor:pointer;display:inline-flex;list-style:none}
+.expand-form>summary::-webkit-details-marker{display:none}
+.expand-form>summary::after{content:"+";font-size:18px;line-height:1}
+.expand-form[open]>summary::after{content:"−"}
+.expand-form[open]>summary{margin-bottom:12px}
+.interior-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:780px}
+.gallery-video-link a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:650px){header .logo{width:106px;height:48px}.service-result{grid-template-columns:minmax(105px,35%) 1fr;gap:12px;padding:12px}.service-result video{height:185px}.interior-grid figure:last-child{grid-column:auto;width:auto;justify-self:stretch}}
 </style></head><body><header><a href="#home" class="logo" aria-label="N8 Detailz home"><img src="images/n8-logo.jpg" alt="N8 Detailz logo"></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#services">Our Services</a><a href="#coatings">Paint Correction &amp; Ceramic Coating</a><a href="#tint">Window Film</a><a href="#gallery">Our Work</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a></header><main><section class="hero" id="home" aria-labelledby="hero-title">
 <div class="hero-copy">
   <p class="eyebrow">Mobile auto detailing · Los Angeles &amp; Orange County</p>
   <h1 id="hero-title">A better finish.<br><em>Right at your door.</em></h1>
   <p>From a quick refresh to paint correction and ceramic coating, N8 Detailz brings professional care to your vehicle.</p>
-  <div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Online <span aria-hidden="true">↗</span></a><a class="btn outline" href="#services">Our Services</a></div>
+  <div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Online</a><a class="btn outline" href="#services">Our Services</a></div>
   <ul class="hero-facts"><li>Licensed &amp; Insured</li><li>Certified ceramic coating installer</li></ul>
 </div>
 <figure class="hero-media"><img src="images/car1.webp" alt="Red sports car detailed by N8 Detailz" fetchpriority="high"></figure>
@@ -124,13 +143,16 @@ header .logo img{width:154px;max-height:62px}
     </div>
     <img class="mobile-setup-photo" src="mobile-detailing-van.webp" alt="N8 Detailz van with both rear doors open, showing its hose reels, equipment rack, and detailing supplies" width="1280" height="720" loading="lazy">
   </div>
-</section><section id="services"><div class="wrap"><div class="section-head"><div><h2>Our Services</h2></div><p class="intro">Choose a package to open its Square booking page. Final pricing may vary by vehicle size and condition.</p></div><div class="grid"><article class="service"><img src="images/car3.webp" alt="Silver Infiniti coupe" loading="lazy"><div class="service-content"><small>Starting at $60</small><h3>Exterior Wash</h3><p>Thorough exterior cleaning, wheels and tires, exterior glass, and a fresh protective finish.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/4RI4EL562QD26SFIQ4FMS73X" target="_blank" rel="noopener">Book Exterior Wash</a></div></article><article class="service"><img src="images/car6.webp" alt="White Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $100</small><h3>Express Detail</h3><p>A convenient interior and exterior refresh for vehicles in maintained condition.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/7UXBQWMNPJPBYH6SEAGYPWIZ" target="_blank" rel="noopener">Book Express Detail</a></div></article><article class="service"><img src="images/car10.webp" alt="Black Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $250</small><h3>Premium Detail</h3><p>Deeper interior care paired with exterior decontamination and sealant protection.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/PRT2TQX777G7J3RQHBNDJCLL" target="_blank" rel="noopener">Book Premium Detail</a></div></article></div><div class="grid clay-services"><article class="service"><div class="service-content"><small>Starting at $160</small><h3>Clay &amp; Seal</h3><p>Exterior wash, iron and clay decontamination, and a ceramic sealant with up to 8 months of protection.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/WG2SEUZU3QXTJLILWJAS6DR2" target="_blank" rel="noopener">Book Clay &amp; Seal</a></div></article><article class="service"><div class="service-content"><small>Starting at $200</small><h3>Clay &amp; Wax</h3><p>Exterior wash, iron and clay decontamination, and machine-applied wax to improve gloss and protect the paint.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/UDRLXL7JZKZSFYN6NNSALISV" target="_blank" rel="noopener">Book Clay &amp; Wax</a></div></article></div></div></section><section class="dark" id="coatings"><div class="wrap feature"><img src="images/car2.webp" alt="Black Ford Bronco after paint correction and ceramic coating" loading="lazy"><div><h2>Paint Correction &amp; Ceramic Coating</h2><p>Restore clarity and gloss with professional paint enhancement, then protect your finish with a professionally installed ceramic coating. We offer paint correction and multi-surface coating options tailored to your vehicle.</p><div class="tag"><span>Certified Installer</span><span>5-Year Paint Coating Option</span></div><div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/QYCVFPA7X3GBXVGHWPKIO7XZ" target="_blank" rel="noopener">Book Paint Correction + 5-Year Coating</a></div></div></div></section><section id="tint">
+</section><section id="services"><div class="wrap"><div class="section-head"><div><h2>Our Services</h2></div><p class="intro">Choose a package to open its Square booking page. Final pricing may vary by vehicle size and condition.</p></div><div class="grid"><article class="service"><img src="images/car3.webp" alt="Silver Infiniti coupe" loading="lazy"><div class="service-content"><small>Starting at $60</small><h3>Exterior Wash</h3><p class="package-fit">For routine exterior upkeep.</p><ul class="package-includes"><li>Hand wash, wheels and tires</li><li>Exterior glass and protective finish</li></ul><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/4RI4EL562QD26SFIQ4FMS73X" target="_blank" rel="noopener">Book Exterior Wash</a></div></article><article class="service"><img src="images/car6.webp" alt="White Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $100</small><h3>Express Detail</h3><p class="package-fit">For a lightly soiled daily driver.</p><ul class="package-includes"><li>Exterior wash</li><li>Interior vacuum and light wipe-down</li></ul><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/7UXBQWMNPJPBYH6SEAGYPWIZ" target="_blank" rel="noopener">Book Express Detail</a></div></article><article class="service"><img src="images/car10.webp" alt="Black Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $250</small><h3>Premium Detail</h3><p class="package-fit">For a deeper inside-and-out reset.</p><ul class="package-includes"><li>Detailed interior cleaning</li><li>Paint decontamination and sealant</li></ul><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/PRT2TQX777G7J3RQHBNDJCLL" target="_blank" rel="noopener">Book Premium Detail</a></div></article></div><div class="grid clay-services"><article class="service"><div class="service-content"><small>Starting at $160</small><h3>Clay &amp; Seal</h3><p class="package-fit">For rough paint that needs longer protection.</p><ul class="package-includes"><li>Iron removal and clay treatment</li><li>Ceramic sealant with up to 8 months of protection</li></ul><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/WG2SEUZU3QXTJLILWJAS6DR2" target="_blank" rel="noopener">Book Clay &amp; Seal</a></div></article><article class="service"><div class="service-content"><small>Starting at $200</small><h3>Clay &amp; Wax</h3><p class="package-fit">For exterior gloss and a smoother finish.</p><ul class="package-includes"><li>Iron removal and clay treatment</li><li>Machine-applied wax</li></ul><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/UDRLXL7JZKZSFYN6NNSALISV" target="_blank" rel="noopener">Book Clay &amp; Wax</a></div></article></div><aside class="service-result" id="featured-result" aria-labelledby="featured-result-title">
+  <figure><video controls playsinline preload="none" poster="bmw-interior-poster.webp" aria-label="BMW interior detail before-and-after video"><source src="bmw-interior-before-after.mp4" type="video/mp4"> <a href="bmw-interior-before-after.mp4">Watch the BMW before-and-after video</a></video></figure>
+  <div><h3 id="featured-result-title">BMW interior detail</h3><p>See the driver’s area before and after the detail in this 25-second video.</p><a class="btn outline" href="#gallery">See Our Work</a></div>
+</aside></div></section><section class="dark" id="coatings"><div class="wrap feature"><img src="images/car2.webp" alt="Black Ford Bronco after paint correction and ceramic coating" loading="lazy"><div><h2>Paint Correction &amp; Ceramic Coating</h2><p>Restore clarity and gloss with professional paint enhancement, then protect your finish with a professionally installed ceramic coating. We offer paint correction and multi-surface coating options tailored to your vehicle.</p><div class="tag"><span>Certified Installer</span><span>5-Year Paint Coating Option</span></div><div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/QYCVFPA7X3GBXVGHWPKIO7XZ" target="_blank" rel="noopener">Book Paint Correction + 5-Year Coating</a></div></div></div></section><section id="tint">
   <div class="wrap tint-layout">
     <div>
       <h2>Window Film</h2>
-      <p class="intro">Mobile tinting adds a <strong>$175 mobile service fee</strong>. There’s <strong>no additional fee for drop-off</strong>. Share your vehicle details and tint preferences for a quote.</p>
+      <p class="intro">Mobile tinting adds a <strong>$175 mobile service fee</strong>. There’s <strong>no additional fee for drop-off</strong>. Choose carbon or ceramic film and tell us which windows you want tinted.</p>
     </div>
-    <form class="tint-form" name="tint-quote" method="POST" action="/tint-thanks.html" data-netlify="true" netlify-honeypot="company-website">
+    <details class="expand-form"><summary class="btn">Request a Tint Quote</summary><form class="tint-form" name="tint-quote" method="POST" action="/tint-thanks.html" data-netlify="true" netlify-honeypot="company-website">
       <input type="hidden" name="form-name" value="tint-quote">
       <p hidden><label>Leave this field blank <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
       <p class="form-note">Fields marked optional can be left blank.</p>
@@ -166,14 +188,14 @@ header .logo img{width:154px;max-height:62px}
       </div>
       <p class="form-note">We’ll follow up with a quote and appointment options.</p>
       <button type="submit" class="btn">Request a Tint Quote</button>
-    </form>
+    </form></details>
   </div>
 </section><section class="dark" id="gallery"><div class="wrap"><div class="section-head"><div><h2>Our work</h2></div><p class="intro">Vehicles detailed, corrected, and coated by N8 Detailz.</p></div><section class="interior-work" aria-labelledby="interior-work-title">
-  <h3 id="interior-work-title">Interior detailing</h3>
+  <h3 id="interior-work-title">Interior detailing</h3><p class="gallery-video-link"><a href="#featured-result">Watch the BMW before-and-after</a></p>
   <div class="interior-grid">
     <figure><img src="DB35.webp" alt="Detailed Mercedes-AMG dashboard, driver’s seat, and center console" width="960" height="1280" loading="lazy"><figcaption>Mercedes-AMG · Front cabin</figcaption></figure>
     <figure><img src="3DB6.webp" alt="Detailed Mercedes-AMG rear seats and carpet" width="960" height="1280" loading="lazy"><figcaption>Mercedes-AMG · Rear cabin</figcaption></figure>
-    <figure><video controls playsinline preload="none" poster="bmw-interior-poster.webp" aria-label="BMW interior detail before-and-after video"><source src="bmw-interior-before-after.mp4" type="video/mp4"> <a href="bmw-interior-before-after.mp4">Watch the BMW before-and-after video</a></video><figcaption>BMW · Before and after</figcaption></figure>
+    
   </div>
 </section><div class="results-gallery">
   <div class="results-heading"><h3>Exterior results</h3><div class="results-controls" hidden><button type="button" data-gallery-step="-1" aria-label="Previous photos">←</button><button type="button" data-gallery-step="1" aria-label="Next photos">→</button></div></div>
@@ -184,7 +206,7 @@ header .logo img{width:154px;max-height:62px}
       <h2 id="reviews-title">Customer reviews</h2>
       <p class="intro">Had your vehicle serviced by N8 Detailz? Tell us what you booked and how it turned out.</p>
     </div>
-    <form class="tint-form" name="customer-review" method="POST" action="/review-thanks.html" data-netlify="true" netlify-honeypot="company-website">
+    <details class="expand-form"><summary class="btn">Leave a Review</summary><form class="tint-form" name="customer-review" method="POST" action="/review-thanks.html" data-netlify="true" netlify-honeypot="company-website">
       <input type="hidden" name="form-name" value="customer-review">
       <p hidden><label>Leave this field blank <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
       <div class="tint-fields">
@@ -197,7 +219,7 @@ header .logo img{width:154px;max-height:62px}
       </div>
       <label class="review-consent"><input type="checkbox" name="publish-permission" value="Yes"> N8 Detailz may publish my first name, service, rating, and review on this website.</label>
       <button type="submit" class="btn">Submit Review</button>
-    </form>
+    </form></details>
   </div>
 </section><section class="dark" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
@@ -209,7 +231,7 @@ header .logo img{width:154px;max-height:62px}
       <div><h3>Payment options</h3><p>Card, cash, Cash App, and Zelle.</p></div>
     </div>
   </div>
-</section><section class="cta"><div class="wrap"><h2>Ready to book?</h2><p>Choose a service and check available appointment times on Square.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book an Appointment</a></div></section></main><footer><span><strong>N8 DETAILZ</strong> © 2026</span><span>Los Angeles &amp; Orange County</span><span><a href="#reviews">Customer Reviews</a></span><span><a href="#contact">Contact &amp; Hours</a></span><span><a href="https://www.instagram.com/n8_detailz/">Instagram @n8_detailz</a></span></footer><a class="btn mobile-book" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a>
+</section></main><footer><span><strong>N8 DETAILZ</strong> © 2026</span><span>Los Angeles &amp; Orange County</span><span><a href="#reviews">Customer Reviews</a></span><span><a href="#contact">Contact &amp; Hours</a></span><span><a href="https://www.instagram.com/n8_detailz/">Instagram @n8_detailz</a></span></footer><a class="btn mobile-book" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a>
 <script>
 (() => {
   const form = document.querySelector('form[name="tint-quote"]');
