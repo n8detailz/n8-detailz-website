@@ -81,13 +81,29 @@ section:not(.hero){padding-block:clamp(50px,7vw,90px)}
 footer{padding-bottom:78px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery img{transition:none}}
+
+.hero{display:grid;grid-template-columns:1fr;align-items:center;isolation:isolate;width:100%;min-height:clamp(540px,68vh,760px);scroll-margin-top:70px;background:#111}
+.hero-copy{position:relative;z-index:1;width:min(1200px,90%);margin-inline:auto;padding:clamp(60px,8vw,118px) 0}
+.hero-media{position:absolute;z-index:-1;inset:0;min-height:0;border-radius:0}
+.hero-media img{object-position:50% 60%}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,9,.97) 0%,rgba(8,8,9,.88) 27%,rgba(8,8,9,.57) 53%,rgba(8,8,9,.06) 100%),linear-gradient(0deg,rgba(8,8,9,.35),transparent 42%)}
+.hero h1 em{color:#f3f3f5}
+.hero .btn.outline{background:#151517;border-color:#a2a2a7}
+.hero .btn.outline:hover{background:#29292c}
+.hero-facts{color:#eee}
+@media(max-width:650px){
+  .hero{align-items:end;min-height:570px}
+  .hero-copy{padding:120px 0 38px}
+  .hero-media img{object-position:50% 55%}
+  .hero-media::after{background:linear-gradient(0deg,rgba(8,8,9,.97) 0%,rgba(8,8,9,.91) 32%,rgba(8,8,9,.53) 66%,rgba(8,8,9,.10) 100%)}
+}
 </style></head><body><header><a href="#home" class="logo" aria-label="N8 Detailz home"><img src="images/n8-logo.jpg" alt="N8 Detailz logo"></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#coatings">Ceramic Coating</a><a href="#tint">Window Tint</a><a href="#gallery">Our Work</a><a href="#reviews">Reviews</a></nav><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a></header><main><section class="hero" id="home" aria-labelledby="hero-title">
 <div class="hero-copy">
   <p class="eyebrow">Mobile auto detailing · Los Angeles</p>
   <h1 id="hero-title">A better finish.<br><em>Right at your door.</em></h1>
   <p>From a quick refresh to paint correction and ceramic coating, N8 Detailz brings professional care to your vehicle.</p>
   <div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Online <span aria-hidden="true">↗</span></a><a class="btn outline" href="#services">View Services</a></div>
-  <ul class="hero-facts"><li>We come to you</li><li>Certified ceramic coating installer</li></ul>
+  <ul class="hero-facts"><li>Licensed &amp; Insured</li><li>Certified ceramic coating installer</li></ul>
 </div>
 <figure class="hero-media"><img src="images/car1.webp" alt="Red sports car detailed by N8 Detailz" fetchpriority="high"></figure>
 </section>
