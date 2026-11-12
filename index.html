@@ -17,10 +17,88 @@
 @media(max-width:850px){.tint-layout{grid-template-columns:1fr}}
 @media(max-width:570px){.tint-fields{grid-template-columns:1fr}}
 .review-consent{display:flex;align-items:flex-start;gap:10px;margin:18px 0;color:#ddd;font-size:14px;line-height:1.5}.review-consent input{flex:none;width:18px;height:18px;margin:2px 0 0;accent-color:#d21d28}nav{gap:clamp(10px,1.5vw,24px);align-items:center}
-</style></head><body><header><a href="#home" class="logo" aria-label="N8 Detailz home"><img src="images/n8-logo.jpg" alt="N8 Detailz logo"></a><nav><a href="#services">Services</a><a href="#coatings">Ceramic Coatings</a><a href="#tint">Window Tinting</a><a href="#gallery">Our Work</a><a href="#about">About</a><a href="#reviews">Reviews</a></nav><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a></header><main><div class="hero" id="home"><div class="hero-inner"><div class="eyebrow">Los Angeles • Mobile Auto Detailing</div><h1>DETAILING<br>WITHOUT <em>COMPROMISE.</em></h1><p>Professional mobile detailing, paint correction, and ceramic coatings. From daily drivers to dream cars, we bring meticulous care to every vehicle.</p><div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Your Detail</a><a class="btn outline" href="#services">Explore Services</a></div></div></div><section id="services"><div class="wrap"><div class="section-head"><div><div class="eyebrow">What we do</div><h2>DETAILING SERVICES</h2></div><p class="intro">Care for every vehicle, from routine washes to long-lasting protection. Final pricing may vary by size and condition.</p></div><div class="grid"><article class="service"><img src="images/car3.webp" alt="Silver Infiniti coupe" loading="lazy"><div class="service-content"><small>Starting at $60</small><h3>Exterior Wash</h3><p>Thorough exterior cleaning, wheels and tires, exterior glass, and a fresh protective finish.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/4RI4EL562QD26SFIQ4FMS73X" target="_blank" rel="noopener">Book Exterior Wash</a></div></article><article class="service"><img src="images/car6.webp" alt="White Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $100</small><h3>Express Detail</h3><p>A convenient interior and exterior refresh for vehicles in maintained condition.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/7UXBQWMNPJPBYH6SEAGYPWIZ" target="_blank" rel="noopener">Book Express Detail</a></div></article><article class="service"><img src="images/car10.webp" alt="Black Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $250</small><h3>Premium Detail</h3><p>Deeper interior care paired with exterior decontamination and sealant protection.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/PRT2TQX777G7J3RQHBNDJCLL" target="_blank" rel="noopener">Book Premium Detail</a></div></article></div><div class="grid clay-services"><article class="service"><div class="service-content"><small>Starting at $160</small><h3>Clay &amp; Seal</h3><p>Exterior wash, iron and clay decontamination, and a ceramic sealant with up to 8 months of protection.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/WG2SEUZU3QXTJLILWJAS6DR2" target="_blank" rel="noopener">Book Clay &amp; Seal</a></div></article><article class="service"><div class="service-content"><small>Starting at $200</small><h3>Clay &amp; Wax</h3><p>Exterior wash, iron and clay decontamination, and machine-applied wax to improve gloss and protect the paint.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/UDRLXL7JZKZSFYN6NNSALISV" target="_blank" rel="noopener">Book Clay &amp; Wax</a></div></article></div></div></section><section class="dark" id="coatings"><div class="wrap feature"><img src="images/car2.webp" alt="Black Ford Bronco after paint correction and ceramic coating" loading="lazy"><div><div class="eyebrow">Protect your investment</div><h2>CERAMIC COATING & PAINT CORRECTION</h2><p>Restore clarity and gloss with professional paint enhancement, then protect your finish with a professionally installed ceramic coating. We offer paint correction and multi-surface coating options tailored to your vehicle.</p><div class="tag"><span>Certified Installer</span><span>5-Year Paint Coating Option</span><span>Premium Finish</span></div><div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/QYCVFPA7X3GBXVGHWPKIO7XZ" target="_blank" rel="noopener">Book Paint Correction + 5-Year Coating</a></div></div></div></section><section id="tint">
+
+:root{--bg:#101011;--panel:#19191b;--red:#b91625}
+body{font-family:Arial,Helvetica,sans-serif}
+:focus-visible{outline:2px solid #ff6571;outline-offset:4px}
+header{padding-block:12px;min-height:70px}
+.logo img{width:108px;max-height:46px}
+.btn{border-radius:5px;letter-spacing:.055em;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:10px}
+.btn.outline{border-color:#76767a}
+.btn.outline:hover{background:#242426}
+.hero{background:none;position:relative;display:grid;grid-template-columns:1fr .95fr;min-height:0;padding:0;margin:auto;width:min(1200px,90%);align-items:stretch}
+.hero-copy{padding:clamp(38px,8vw,100px) clamp(16px,5vw,72px) clamp(38px,7vw,82px) 0;align-self:center}
+.hero-copy>.eyebrow{font-size:12px;line-height:1.5;color:#ff6874;letter-spacing:.13em;margin:0}
+.hero h1{font-size:clamp(44px,5.8vw,86px);letter-spacing:-.062em;line-height:.99;margin:19px 0}
+.hero h1 em{color:#d1d1d5}
+.hero-copy>p:not(.eyebrow){margin:0;max-width:435px}
+.hero-media{margin:0;position:relative;min-height:470px;background:#202023;overflow:hidden;border-radius:0 0 8px 8px}
+.hero-media img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:50% 58%}
+.hero-facts{list-style:none;display:flex;flex-wrap:wrap;gap:8px 19px;padding:0;margin:25px 0 0;color:#ccc;font-size:13px;line-height:1.5}
+.hero-facts li::before{content:"";display:inline-block;background:#f05c68;width:6px;height:6px;border-radius:50%;vertical-align:2px;margin-right:8px}
+.quick-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:20px;border:1px solid #38383c;border-radius:7px;background:#18181a;gap:0}
+.quick-links a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:19px clamp(12px,2vw,28px);color:#fff}
+.quick-links a+a{border-left:1px solid #38383c}
+.quick-links a:hover{background:#252527}
+.quick-links strong,.quick-links small{display:block}
+.quick-links strong{font-size:16px}
+.quick-links small{margin-top:5px;color:#c7c7ca;font-size:13px;line-height:1.4}
+.quick-links a>span:last-child{color:#ff6874;font-size:18px}
+section:not(.hero){padding-block:clamp(50px,7vw,90px)}
+.section-head{margin-bottom:22px}
+.section-head h2,.feature h2,.tint-layout h2,.cta h2{letter-spacing:-.035em}
+.section-head .intro{margin:0;max-width:420px}
+.service{border:1px solid #39393c;border-radius:7px}
+.service-content{padding:22px}
+.service h3{margin-top:7px}
+.service p{min-height:0;margin-bottom:4px}
+.service img{display:block}
+.grid:not(.clay-services) .service{display:flex;flex-direction:column}
+.grid:not(.clay-services) .service-content{display:flex;flex-direction:column;flex:1;align-items:flex-start}
+.grid:not(.clay-services) .service p{flex:1}
+.feature img,.gallery img{border-radius:6px}
+.gallery-featured{grid-template-columns:repeat(3,minmax(0,1fr))}
+.more-work{margin-top:16px}
+.more-work summary{cursor:pointer;display:list-item;width:max-content;max-width:100%;padding:12px 14px;border:1px solid #76767a;border-radius:5px;font-weight:700}
+.more-work .gallery{margin-top:16px}
+.tint-form{border-radius:7px}
+.cta{background:#211417;border-top:1px solid #463035}
+@media(max-width:850px){
+.hero-media{min-height:410px}
+.quick-links{display:grid}
+}
+@media(max-width:650px){
+.hero{grid-template-columns:1fr}
+.hero-copy{padding:36px 0 24px}
+.hero h1{font-size:clamp(42px,9.5vw,62px)}
+.hero-media{min-height:clamp(225px,68vw,420px);border-radius:7px}
+.hero-facts{margin-top:19px}
+.quick-links{grid-template-columns:1fr;margin-top:13px}
+.quick-links a{padding:13px 15px}
+.quick-links a+a{border-left:0;border-top:1px solid #38383c}
+.section-head .intro{margin-top:9px}
+.gallery-featured{grid-template-columns:repeat(2,minmax(0,1fr))}
+footer{padding-bottom:78px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery img{transition:none}}
+</style></head><body><header><a href="#home" class="logo" aria-label="N8 Detailz home"><img src="images/n8-logo.jpg" alt="N8 Detailz logo"></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#coatings">Ceramic Coating</a><a href="#tint">Window Tint</a><a href="#gallery">Our Work</a><a href="#reviews">Reviews</a></nav><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a></header><main><section class="hero" id="home" aria-labelledby="hero-title">
+<div class="hero-copy">
+  <p class="eyebrow">Mobile auto detailing · Los Angeles</p>
+  <h1 id="hero-title">A better finish.<br><em>Right at your door.</em></h1>
+  <p>From a quick refresh to paint correction and ceramic coating, N8 Detailz brings professional care to your vehicle.</p>
+  <div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Online <span aria-hidden="true">↗</span></a><a class="btn outline" href="#services">View Services</a></div>
+  <ul class="hero-facts"><li>We come to you</li><li>Certified ceramic coating installer</li></ul>
+</div>
+<figure class="hero-media"><img src="images/car1.webp" alt="Red sports car detailed by N8 Detailz" fetchpriority="high"></figure>
+</section>
+<nav class="quick-links wrap" aria-label="Choose a service">
+  <a href="#services"><span><strong>Detailing</strong><small>Exterior and full detail packages</small></span><span aria-hidden="true">↗</span></a>
+  <a href="#coatings"><span><strong>Paint &amp; Coatings</strong><small>Paint correction and ceramic protection</small></span><span aria-hidden="true">↗</span></a>
+  <a href="#tint"><span><strong>Window Tint</strong><small>Request a mobile or drop-off quote</small></span><span aria-hidden="true">↗</span></a>
+</nav><section id="services"><div class="wrap"><div class="section-head"><div><h2>Detailing services</h2></div><p class="intro">Choose a package to open its Square booking page. Final pricing may vary by vehicle size and condition.</p></div><div class="grid"><article class="service"><img src="images/car3.webp" alt="Silver Infiniti coupe" loading="lazy"><div class="service-content"><small>Starting at $60</small><h3>Exterior Wash</h3><p>Thorough exterior cleaning, wheels and tires, exterior glass, and a fresh protective finish.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/4RI4EL562QD26SFIQ4FMS73X" target="_blank" rel="noopener">Book Exterior Wash</a></div></article><article class="service"><img src="images/car6.webp" alt="White Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $100</small><h3>Express Detail</h3><p>A convenient interior and exterior refresh for vehicles in maintained condition.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/7UXBQWMNPJPBYH6SEAGYPWIZ" target="_blank" rel="noopener">Book Express Detail</a></div></article><article class="service"><img src="images/car10.webp" alt="Black Mercedes-Benz" loading="lazy"><div class="service-content"><small>Starting at $250</small><h3>Premium Detail</h3><p>Deeper interior care paired with exterior decontamination and sealant protection.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/PRT2TQX777G7J3RQHBNDJCLL" target="_blank" rel="noopener">Book Premium Detail</a></div></article></div><div class="grid clay-services"><article class="service"><div class="service-content"><small>Starting at $160</small><h3>Clay &amp; Seal</h3><p>Exterior wash, iron and clay decontamination, and a ceramic sealant with up to 8 months of protection.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/WG2SEUZU3QXTJLILWJAS6DR2" target="_blank" rel="noopener">Book Clay &amp; Seal</a></div></article><article class="service"><div class="service-content"><small>Starting at $200</small><h3>Clay &amp; Wax</h3><p>Exterior wash, iron and clay decontamination, and machine-applied wax to improve gloss and protect the paint.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/UDRLXL7JZKZSFYN6NNSALISV" target="_blank" rel="noopener">Book Clay &amp; Wax</a></div></article></div></div></section><section class="dark" id="coatings"><div class="wrap feature"><img src="images/car2.webp" alt="Black Ford Bronco after paint correction and ceramic coating" loading="lazy"><div><h2>Paint correction &amp; ceramic coating</h2><p>Restore clarity and gloss with professional paint enhancement, then protect your finish with a professionally installed ceramic coating. We offer paint correction and multi-surface coating options tailored to your vehicle.</p><div class="tag"><span>Certified Installer</span><span>5-Year Paint Coating Option</span></div><div class="actions"><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services/QYCVFPA7X3GBXVGHWPKIO7XZ" target="_blank" rel="noopener">Book Paint Correction + 5-Year Coating</a></div></div></div></section><section id="tint">
   <div class="wrap tint-layout">
     <div>
-      <h2>WINDOW TINTING</h2>
+      <h2>Window tinting</h2>
       <p class="intro">Mobile tinting adds a <strong>$175 mobile service fee</strong>. There’s <strong>no additional fee for drop-off</strong>. Share your vehicle details and tint preferences for a quote.</p>
     </div>
     <form class="tint-form" name="tint-quote" method="POST" action="/tint-thanks.html" data-netlify="true" netlify-honeypot="company-website">
@@ -56,10 +134,10 @@
       <button type="submit" class="btn">Request a Tint Quote</button>
     </form>
   </div>
-</section><section class="dark" id="gallery"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Real cars. Real work.</div><h2>OUR WORK</h2></div><p class="intro">A selection of vehicles we've had the privilege of working on.</p></div><div class="gallery"><img src="images/car1.webp" alt="N8 Detailz vehicle gallery photo 1" loading="lazy"><img src="images/car2.webp" alt="N8 Detailz vehicle gallery photo 2" loading="lazy"><img src="images/car3.webp" alt="N8 Detailz vehicle gallery photo 3" loading="lazy"><img src="images/car4.webp" alt="N8 Detailz vehicle gallery photo 4" loading="lazy"><img src="images/car5.webp" alt="N8 Detailz vehicle gallery photo 5" loading="lazy"><img src="images/car6.webp" alt="N8 Detailz vehicle gallery photo 6" loading="lazy"><img src="images/car7.webp" alt="N8 Detailz vehicle gallery photo 7" loading="lazy"><img src="images/car8.webp" alt="N8 Detailz vehicle gallery photo 8" loading="lazy"><img src="images/car9.webp" alt="N8 Detailz vehicle gallery photo 9" loading="lazy"><img src="images/car10.webp" alt="N8 Detailz vehicle gallery photo 10" loading="lazy"><img src="images/car11.webp" alt="N8 Detailz vehicle gallery photo 11" loading="lazy"><img src="images/car12.webp" alt="N8 Detailz vehicle gallery photo 12" loading="lazy"></div></div></section><section class="dark" id="about"><div class="wrap feature"><div><div class="eyebrow">The N8 Detailz difference</div><h2>WE COME TO YOU.</h2><p>N8 Detailz is a Los Angeles-area mobile detailing business built around attention to detail, professional care, and pride in every finish. Whether it's your everyday ride or your weekend favorite, we treat it with the respect it deserves.</p><p>Serving Los Angeles and surrounding communities. Certain specialty services may require drop-off.</p><div class="actions"><a class="btn outline" href="https://www.instagram.com/n8_detailz/" target="_blank" rel="noopener">Follow @n8_detailz</a></div></div><img src="images/car9.webp" alt="Detailed premium SUV" loading="lazy"></div></section><section id="reviews" aria-labelledby="reviews-title">
+</section><section class="dark" id="gallery"><div class="wrap"><div class="section-head"><div><h2>Our work</h2></div><p class="intro">Vehicles detailed, corrected, and coated by N8 Detailz.</p></div><div class="gallery gallery-featured"><img src="images/car2.webp" alt="N8 Detailz vehicle gallery photo 2" loading="lazy"><img src="images/car6.webp" alt="N8 Detailz vehicle gallery photo 6" loading="lazy"><img src="images/car10.webp" alt="N8 Detailz vehicle gallery photo 10" loading="lazy"><img src="images/car3.webp" alt="N8 Detailz vehicle gallery photo 3" loading="lazy"><img src="images/car1.webp" alt="N8 Detailz vehicle gallery photo 1" loading="lazy"><img src="images/car7.webp" alt="N8 Detailz vehicle gallery photo 7" loading="lazy"></div><details class="more-work"><summary>See more of our work</summary><div class="gallery"><img src="images/car4.webp" alt="N8 Detailz vehicle gallery photo 4" loading="lazy"><img src="images/car5.webp" alt="N8 Detailz vehicle gallery photo 5" loading="lazy"><img src="images/car8.webp" alt="N8 Detailz vehicle gallery photo 8" loading="lazy"><img src="images/car9.webp" alt="N8 Detailz vehicle gallery photo 9" loading="lazy"><img src="images/car11.webp" alt="N8 Detailz vehicle gallery photo 11" loading="lazy"><img src="images/car12.webp" alt="N8 Detailz vehicle gallery photo 12" loading="lazy"></div></details></div></section><section class="dark" id="about"><div class="wrap feature"><div><h2>Mobile detailing that fits your day.</h2><p>Book at your home or workplace in the Los Angeles area. We bring our detailing setup to you.</p><p>Serving Los Angeles and surrounding communities. Certain specialty services may require drop-off.</p><div class="actions"><a class="btn outline" href="https://www.instagram.com/n8_detailz/" target="_blank" rel="noopener">Follow @n8_detailz</a></div></div><img src="images/car9.webp" alt="Detailed premium SUV" loading="lazy"></div></section><section id="reviews" aria-labelledby="reviews-title">
   <div class="wrap tint-layout">
     <div>
-      <h2 id="reviews-title">CUSTOMER REVIEWS</h2>
+      <h2 id="reviews-title">Customer reviews</h2>
       <p class="intro">Had your vehicle serviced by N8 Detailz? Tell us what you booked and how it turned out.</p>
     </div>
     <form class="tint-form" name="customer-review" method="POST" action="/review-thanks.html" data-netlify="true" netlify-honeypot="company-website">
@@ -77,4 +155,4 @@
       <button type="submit" class="btn">Submit Review</button>
     </form>
   </div>
-</section><section class="cta"><div class="wrap"><div class="eyebrow">Ready for the N8 treatment?</div><h2>YOUR NEXT DETAIL STARTS HERE.</h2><p>Choose your service and reserve an appointment through our secure Square booking page.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book an Appointment</a></div></section></main><footer><span><strong>N8 DETAILZ</strong> © 2026</span><span>Los Angeles & Surrounding Areas</span><span><a href="#reviews">Customer Reviews</a></span><span><a href="https://www.instagram.com/n8_detailz/">Instagram @n8_detailz</a></span></footer><a class="btn mobile-book" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a></body></html>
+</section><section class="cta"><div class="wrap"><h2>Ready to book?</h2><p>Choose a service and check available appointment times on Square.</p><a class="btn" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book an Appointment</a></div></section></main><footer><span><strong>N8 DETAILZ</strong> © 2026</span><span>Los Angeles & Surrounding Areas</span><span><a href="#reviews">Customer Reviews</a></span><span><a href="https://www.instagram.com/n8_detailz/">Instagram @n8_detailz</a></span></footer><a class="btn mobile-book" href="https://book.squareup.com/appointments/xxbpqu1njaesru/location/LGVWMHJM33BS7/services?buttonTextColor=ffffff&amp;color=212121&amp;locale=en&amp;referrer=so" target="_blank" rel="noopener">Book Now</a></body></html>
